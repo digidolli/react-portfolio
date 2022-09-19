@@ -1,0 +1,21 @@
+.matrix-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+}
+
+.rain-stream {
+    color: #92e5a1;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+    user-select: none;
+    text-shadow: 0 0 8px rgba(32, 194, 14, 0.8);
+    font-size: 50px;
+    margin-top: -12px;
+    font-family: 'Matrix';
+    
+}
