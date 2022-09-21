@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import MatrixRain from '../MatrixRain'
+import Loader from 'react-loaders'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -10,6 +11,7 @@ const Home = () => {
     const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
 
 return (
+    <>
     <div className="container home-page">
         <MatrixRain />
         <div className="text-zone">
@@ -33,6 +35,8 @@ return (
             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
         </div>
     </div>
+    <Loader type="pacman" />
+    </>
 )
 
 }

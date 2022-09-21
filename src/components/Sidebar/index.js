@@ -1,15 +1,12 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCode, faEnvelope, faHome, faPhotoFilm, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faInstagram, faLinkedin, faSpaceAwesome } from '@fortawesome/free-brands-svg-icons'
+ 
 
 const Sidebar = () => (
     <div className='nav-bar'>
-        <Link className='logo' to='/'>
-            <img src={LogoS} alt="logo"/>
-        </Link>
         <nav>
     <NavLink exact="true" activeclassname="active" to="/">
         <FontAwesomeIcon icon={faHome} color="#204829" />
@@ -19,6 +16,15 @@ const Sidebar = () => (
     </NavLink>
     <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
         <FontAwesomeIcon icon={faEnvelope} color="#204829" /> 
+    </NavLink>
+    <NavLink exact="true" activeclassname="active" className="print-link" to="/3d-print">
+        <FontAwesomeIcon icon={faSpaceAwesome} color="#204829" /> 
+    </NavLink>
+    <NavLink exact="true" activeclassname="active" className="code-link" to="/code">
+        <FontAwesomeIcon icon={faCode} color="#204829" /> 
+    </NavLink>
+    <NavLink exact="true" activeclassname="active" className="blog-link" to="/blog">
+        <FontAwesomeIcon icon={faPhotoFilm} color="#204829" /> 
     </NavLink>
     </nav>
     <ul>
