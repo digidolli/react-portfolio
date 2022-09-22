@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import useInterval from '@use-it/interval';
+import './index.scss'
 
 // Constants
-const VALID_CHARS = `abcdefghijklmnopqrstuvwxyz0123456789$+-*/=%"'#&_(),.;:?!\\|{}<>[]^~`;
+const VALID_CHARS = `ァィゥェォカガキギクグケゲコゴサザシジスズセゼソゾダタチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヷヸヹヺーヽヾ
+`;
 const STREAM_MUTATION_ODDS = 0.02;
 
 const MIN_STREAM_SIZE = 30;
@@ -77,9 +79,8 @@ const RainStream = props => {
 	}, intervalDelay);
 
 	return (
-		<div
+		<div className='matrix-rain'
 			style={{
-				fontFamily: 'matrixFont',
 				color: '#20c20e',
 				writingMode: 'vertical-rl',
 				textOrientation: 'upright',
@@ -90,19 +91,19 @@ const RainStream = props => {
 				marginRight: -15,
 				textShadow: '0px 0px 8px rgba(32, 194, 14, 0.8)',
 				fontSize: 50,
-                opacity: 0.1,
+                opacity: 0.04,
 			}}>
 			{stream.map((char, index) => (
 				<a
 					style={{
 						marginTop: -12,
-						// Reduce opacity for last chars
 						opacity: index < 6 ? 0.1 + index * 0.15 : 1,
 						color: index === stream.length - 1 ? '#fff' : undefined,
 						textShadow:
 							index === stream.length - 1
 								? '0px 0px 20px rgba(255, 255, 255, 1)'
 								: undefined,
+
 					}}>
 					{char}
 				</a>

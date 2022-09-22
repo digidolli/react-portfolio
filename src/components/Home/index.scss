@@ -1,4 +1,5 @@
 .home-page {
+    
 
     .text-zone {
         position: absolute;
@@ -9,37 +10,12 @@
         max-height: 90%;
     }
     h1 {
+        font-family: 'Helvetica Neue';
+        font-weight: 800;
         color: #22b455;
-        font-size: 53px;
+        font-size: 49px;
         margin: 0;
         font-weight: 400;
-
-        &::before {
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-        }
-        img {
-            width: 32px;
-            margin-left: 20px;
-            opacity: 0;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
 
     h2 {
@@ -58,7 +34,7 @@
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
-        font-family: 'sans-serif';
+        font-family: 'Helvetica Neue';
         text-decoration: none;
         padding: 10px 18px;
         border: 1px solid #22b455;

@@ -2,14 +2,16 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import { TypeAnimation } from 'react-type-animation';
+
 import MatrixRain from '../MatrixRain'
 import Loader from 'react-loaders'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = [' ', 'D', 'i', 'g', 'i', 'd', 'o', 'l', 'l', 'i']
-    const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
-
+    const nameArray = [' ', 'D', 'i', 'g', 'i', 'd', 'o', 'l', 'l', 'i', '.']
+    const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r', ' ', 'a', 'n', 'd']
+    const secondJobArray = ['3', 'D', ' ', 'P', 'r', 'i', 'n', 't', ' ', 'D', 'e', 's', 'i', 'g', 'n', 'e', 'r', '.']
 return (
     <>
     <div className="container home-page">
@@ -25,14 +27,22 @@ return (
             strArray={nameArray} 
             idx={15}/>
             <br />
-            <AnimatedLetters letterClass={letterClass}
-            strArray={jobArray} 
-            idx={18}/>
+            <TypeAnimation
+    sequence={[
+    3500,
+    'I am a Software Engineer.',
+    1000,
+    'I am a 3D Print Designer.',
+    1000,
+    'I am a Digital Artist.'
+    ]}
+    speed={40} 
+    wrapper="span" 
+    repeat={Infinity} 
+  />
             </h1>
-            <h2>
-            Creative Coder / 3D Print Specialist
-            </h2>
-            <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+            
+            <Link to="/about" className='flat-button'>CONTACT ME</Link>
         </div>
     </div>
     <Loader type="pacman" />

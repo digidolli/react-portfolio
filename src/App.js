@@ -4,7 +4,8 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
-import Contact from './components/Contact';
+import Print from './components/Print';
+import Code from './components/Code';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
     <Routes>
       <Route element={<Layout />} >
       <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="about" element={<About />} />   
+      <Route path="print" element={<Print />} /> 
+      <Route path="code" element={<Code />} />       
       </Route>
     </Routes>
     </>
