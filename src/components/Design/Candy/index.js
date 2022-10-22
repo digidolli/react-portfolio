@@ -1,7 +1,6 @@
 import React from "react";
 import './index.scss'
 import Loader from "react-loaders";
-import Carousel from "react-gallery-carousel";
 
 const Candy = () => {
     return ( 
@@ -14,11 +13,11 @@ const Candy = () => {
                 Rather than the well known black, skin-tight latex looks, I decided to go for a bright colour pallete and loose pieces to show the diversity of such a sustainable fabric.
             </h2>
             <div className="shoot-pics" >
-             <img src="../../images/candy1.JPG" alt="fashion image" className="designCoverImage"></img>
-            <img src="../../images/candy2.JPG" alt="fashion image" className="designCoverImage"></img>
-             <img src="../../images/candy3.JPG" alt="fashion image" className="designCoverImage"></img>
-            <img src="../../images/candy4.JPG" alt="fashion image" className="designCoverImage"></img>
-            <img src="../../images/candy5.JPG" alt="fashion image" className="designCoverImage"></img>
+             <img src="../../images/candy1.JPG" alt="fashion" className="designCoverImage"></img>
+            <img src="../../images/candy2.JPG" alt="fashion" className="designCoverImage"></img>
+             <img src="../../images/candy3.JPG" alt="fashion" className="designCoverImage"></img>
+            <img src="../../images/candy4.JPG" alt="fashion" className="designCoverImage"></img>
+            <img src="../../images/candy5.JPG" alt="fashion" className="designCoverImage"></img>
             </div>
         <Loader type="pacman" />
         </div>

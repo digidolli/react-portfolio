@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -8,10 +8,9 @@ import MatrixRain from '../MatrixRain'
 import Loader from 'react-loaders'
 
 const Home = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
     const nameArray = [' ', 'D', 'i', 'g', 'i', 'd', 'o', 'l', 'l', 'i', '.']
-    const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r', ' ', 'a', 'n', 'd']
-    const secondJobArray = ['3', 'D', ' ', 'P', 'r', 'i', 'n', 't', ' ', 'D', 'e', 's', 'i', 'g', 'n', 'e', 'r', '.']
+    
 return (
     <>
     <div className="container home-page">
