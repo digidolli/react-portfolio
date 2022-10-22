@@ -25,7 +25,7 @@ const Design = () => {
     <div className="cover-image-container container">
 
         <Link exact="true" className="design-link cover-images" to="/design/candy" >
-            <img src="../../images/candy-cover.JPG" alt="fashion image" className="designCoverImage"></img>
+            <img src="../../images/candy-cover.JPG" alt="fashion" className="designCoverImage"></img>
             <div className="content">
                 <p className="title">Candy, 2019</p>
                                     <h4 className="description" >
@@ -34,7 +34,7 @@ const Design = () => {
             </div>
         </Link>
          <Link exact="true" className="design-link cover-images" to="/design/thirteen" >
-            <img src="../../images/thirteen-4.jpg" alt="fashion image" className="designCoverImage"></img>
+            <img src="../../images/thirteen-4.jpg" alt="fashion" className="designCoverImage"></img>
             <div className="content">
                 <p className="title">THIRTEEN, 2020</p>
                                     <h4 className="description" >
@@ -43,7 +43,7 @@ const Design = () => {
             </div>
         </Link>
         <Link exact="true" className="design-link cover-images" to="/design/circ" >
-            <img src="../../images/circ.jpeg" alt="fashion image" className="designCoverImage"></img>
+            <img src="../../images/circ.jpeg" alt="fashion" className="designCoverImage"></img>
             <div className="content">
                 <p className="title">Circ, 2019 </p>
                                     <h4 className="description" >
