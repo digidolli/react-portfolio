@@ -2,7 +2,6 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
-import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Design from './components/Design';
 import Code from './components/Code';

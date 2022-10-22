@@ -94,7 +94,7 @@ const RainStream = props => {
                 opacity: 0.08,
 			}}>
 			{stream.map((char, index) => (
-				<a
+				<a href=''
 					style={{
 						marginTop: -12,
 						opacity: index < 6 ? 0.1 + index * 0.15 : 1,
