@@ -89,9 +89,9 @@
                     } 
                 }
 
-                                a.print-link {
+                                a.design-link {
                                     &:after {
-                                        content: '3D PRINT';
+                                        content: 'DESIGNS';
                                     }
                                 }
 
@@ -112,6 +112,10 @@
                         color: black;
                     }
                 }
+    }
+
+    .hamburger-icon {
+        display: none;
     }
 
     ul {
@@ -138,4 +142,72 @@
         }
     }
     
+}
+
+.hamburger-icon,
+.close-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .nav-bar {
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+        margin-bottom: 50px;
+
+        ul, nav {
+            display: none;
+        }
+
+        nav {
+            position: block;
+            width: 100%;
+            height: 100%;
+            background: #204829;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 2;
+            margin: 0;
+            overflow: hidden;
+
+            a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+            
+                }
+            
+                a:after {
+                    opacity: 1;
+                    position: initial;
+                    width: auto;
+                    margin-left: 10px;
+                }
+
+                a svg {
+                    opacity: 1 !important;
+                }
+                &.mobile-show {
+                    display: block;
+                    transition: all 0.3s ease-out;
+                }
+                
+        }
+
+                .hamburger-icon,
+                .close-icon
+                 {
+                    display: block;
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    z-index: 1;
+      
+                }
+                
+       
+    }
 }

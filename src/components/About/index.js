@@ -1,15 +1,33 @@
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect, useState } from 'react'
+import { useRef } from 'react'
 import Loader from 'react-loaders'
 import { TypeAnimation } from 'react-type-animation';
-import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import emailjs from '@emailjs/browser';
 
 const About = () => {
     
-        const [letterClass, setLetterClass] = useState('text-animate')
-        
+        const refForm = useRef();
+
+        const sendEmail = (e) => {
+            e.preventDefault()
+
+            emailjs
+            .sendForm(
+                'service_rdho77e',
+                'template_86eh7pm',
+                refForm.current,
+                'zhu9Xvv9TqcVNm87r'
+            )
+            .then(
+                () => {
+                alert('Message Successfully sent')
+                window.location.reload(false)
+            },
+            () => {
+                alert('Failed to send message, please try again')
+            }
+            )
+        }
 
     return (
         <>
@@ -27,20 +45,25 @@ const About = () => {
     repeat={0} 
   />
                 </h1>
-                <p>
+                <h2>
                     I'm a very ambitious engineer looking for a role in a reputable IT company with opportunities to work with the latest technologies on challenging and diverse projects
-                </p>
-                <p>
+                </h2>
+                <h2>
                     I'm quietly confident, naturally curious and perpetually working on improving my chops one design problem at a time.
-                </p>
-                <p>If I need to define myself in one sentence it would be that I am a family person, engineer, friendly being, fan of cute things, photography enthusiast and tech-obsessed</p>
+                </h2>
+                <h2>If I need to define myself in one sentence it would be that I am a family person, engineer, friendly being, fan of cute things, photography enthusiast and tech-obsessed</h2>
             </div>            
         </div>
 
-            <div className='text-zone'>
+            <div >
                 
                 <div className='contact-form'>
-                    <form>
+                    <span>
+                        <h4>
+                           Send me a message if you have any questions!
+                        </h4>
+                    </span>
+                    <form ref={refForm} onSubmit={sendEmail}>
                         <ul>
                             <li className='half'>
                                 <input type="text" name="name" placeholder="Name" required />

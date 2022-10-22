@@ -91,7 +91,7 @@ const RainStream = props => {
 				marginRight: -15,
 				textShadow: '0px 0px 8px rgba(32, 194, 14, 0.8)',
 				fontSize: 50,
-                opacity: 0.04,
+                opacity: 0.08,
 			}}>
 			{stream.map((char, index) => (
 				<a

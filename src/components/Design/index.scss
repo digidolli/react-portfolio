@@ -1,0 +1,136 @@
+.design-page {
+        padding-left: 100px;
+        position: initial;
+        height: 100%;
+     
+        h1 {
+                margin-top: 50px;
+                margin-bottom: 10px;
+            }
+
+       
+
+    .cover-image-container {
+            display: flex;
+            gap: 25px;
+            max-width: 90%;
+            overflow-x: scroll;
+            white-space: nowrap;
+
+            
+                }
+            .cover-images {
+                        position: relative;
+                        flex: 1 1 20%;
+                        height: 500px;
+                        top: 170px;
+                        filter: rgb(9, 228, 23);
+                        -webkit-filter: grayscale(1);
+                        transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+                        &:hover {
+                            transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+                            filter: none;
+                            -webkit-filter: none;
+                        }
+                        
+       .designCoverImage{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            
+            
+
+            
+            
+        }
+                .content {
+                    position: relative;
+                    width: 500px;
+                    z-index: 3;
+                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    color: white;
+                    top: 38%;
+                    text-align: center;
+                    padding: 10px;
+                   
+                }
+                .title {
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    letter-spacing: 4px;
+                }
+                .description {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                    color: white;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                }
+                                    
+                                       
+                                   
+                                
+             }
+                         
+                      a {
+                        text-decoration: none;
+                      }   
+         }
+
+
+                 @media screen and (max-width: 1200px) {
+                    
+                    .design-page {
+                        width: 100%;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        
+
+                        h1 {
+                            margin-top: 0px;
+                       
+                        }
+                        .cover-image-container {
+                            display: initial;
+                            width: 100%;
+                            
+                            }
+                       
+                        .cover-images {
+                            position: initial;
+                            display: block;
+                            margin: 10px;
+                       
+                            height: 190px;
+                            filter: rgb(9, 228, 23);
+                                -webkit-filter: grayscale(1);
+                                transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+                            
+                                &:hover {
+                                    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+                                    filter: rgb(9, 228, 23);
+                                        -webkit-filter: grayscale(1);
+                                        transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+                                }
+                            .content{
+                                display: initial;
+                                justify-content: center;
+                        
+                            }
+                            
+                            .description{
+                                display: none
+                            }
+                            
+                            }
+                            
+                    
+                        }
+                        
+                }

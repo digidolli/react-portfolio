@@ -1,7 +1,25 @@
 .contact-form {
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    z-index: 999999;
+    width: 30%;
+    padding: 20px;
+    color: #22b455;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+
+    span {
+        font-size: 14px;
+        display: block;
+        padding-top: 20px;
+        animation: fadeInUp 1s 1s;
+        animation-fill-mode: forwards;
+    }
 }
 
 ul {
@@ -71,5 +89,19 @@ textarea {
     float: right;
     border: 4px;
 
+
+}
+
+@media screen and (max-width: 1200px) { 
+
+    .about-page{
+        box-sizing: border-box;
+    }
+    .contact-form {
+        text-align: center;
+        position: initial;
+            width: 88%;
+            height: 0%;
+    }
 
 }

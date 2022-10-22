@@ -29,21 +29,24 @@ return (
             <br />
             <TypeAnimation
     sequence={[
-    3500,
-    'I am a Software Engineer.',
-    1000,
-    'I am a 3D Print Designer.',
-    1000,
-    'I am a Digital Artist.'
+    3000,
+    'Software Engineer.',
+    2000,
+    '3D Print Designer.',
+    2000,
+    'Digital Artist.',
+    2000,
+    ' '
     ]}
     speed={40} 
     wrapper="span" 
     repeat={Infinity} 
   />
             </h1>
-            
             <Link to="/about" className='flat-button'>CONTACT ME</Link>
         </div>
+        <Link to="/about" className='flat-button-responsive'>CONTACT ME</Link>
+
     </div>
     <Loader type="pacman" />
     </>

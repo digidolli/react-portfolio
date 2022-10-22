@@ -1,0 +1,22 @@
+{
+    "codepage": [
+        {
+            "cover": "../../images/site-screenshot.png",
+            "title": "Blog Website for Fashion Icon Multiple Sclerosis Fashionista",
+            "description": "React, JSX, API intergration, Netlify",
+            "url": ""
+        },
+        {
+            "cover": "../../images/site-screenshot.png",
+            "title": "Portfolio Wesbite for Photgrapher Jay Vascal",
+            "description": "React, JSX, API intergration, Netlify",
+            "url": ""
+        },
+        {
+            "cover": "../../images/site-screenshot.png",
+            "title": "E-commerce Website for Fashion Brand L.A.B",
+            "description": "React, JSX, API intergration, Netlify",
+            "url": ""
+        }
+    ]   
+}

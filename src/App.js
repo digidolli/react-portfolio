@@ -4,8 +4,11 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
-import Print from './components/Print';
+import Design from './components/Design';
 import Code from './components/Code';
+import Candy from './components/Design/Candy';
+import Thirteen from './components/Design/Thirteen';
+import Circ from './components/Design/Circ';
 
 function App() {
   return (
@@ -14,7 +17,10 @@ function App() {
       <Route element={<Layout />} >
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />   
-      <Route path="print" element={<Print />} /> 
+      <Route path="design" element={<Design />} /> 
+      <Route path="design/candy" element={<Candy />} />
+      <Route path="design/thirteen" element={<Thirteen />} />
+      <Route path="design/circ" element={<Circ />} />
       <Route path="code" element={<Code />} />       
       </Route>
     </Routes>
